@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750 px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050 px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel"> <!-- sempre você adiciona o arquivo principal e por cima os sources com os arquivos caso o principal seja maior que o dispositivo-->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+        <audio src="media/musica1.mp3" autoplay controls></audio> <!-- da pra usar a tag <source dentro da tag <audio> quando tiver mais de um formato de audio, pra ser disponivel em todos os navegadores -->
+        <p></a> Baixe agora esse o áudio que você acabou de escutar, <a href="media/musica1.mp3">clicando aqui!</a></p> <!-- a maneira mais fácil de colocar arquivos pesados em seu site, em vez de upar é você fazer um link para download, igual a esse -->
+
+</body>
+</html>

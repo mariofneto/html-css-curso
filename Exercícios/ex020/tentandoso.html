@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo sozinho Pseudo-classes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+
+        a:visited {
+            color: darkred ;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .especial:hover {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+
+        }
+
+        .especial::before {
+            content: '>>';
+            font-weight: lighter;
+        }
+
+        .especial::after {
+            content: '<<' ;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Acesse todos meus links</h1>
+    <p>Para ver minhas fotos pessoais entre no meu <a href="https://www.instagram.com/marioo.netoo/">instagram</a></p>
+
+    <p>Para ver meu histórico de partidas do LoL, acesse meu perfil do <a href="https://www.leagueofgraphs.com/pt/summoner/br/marioonetoo3" class="especial">LEAGUE OF GRAPHS</a></p>
+
+    <p>Para ver meus videos no youtube acesse <a href="https://www.youtube.com/channel/UCO5XX3PBHtvUybgV3w7WX2w" class="especial">meu canal</a></p>
+</body>
+</html>

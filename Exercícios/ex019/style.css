@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    background-color: #00F773;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #006B32;
+}
+/* 
+Usamos no exemplo o seletor h1#principal para indicar que o h1 que vai modificar é apenas o que tem o id principal.
+
+TUDO QUE EM HTML É ID EM CSS VIRA #
+TUDO QUE EM HTML É CLASS EM CSS É .
+
+*/
+
+h1#principal {
+    text-align: center ;
+    background-color: #00AB50;
+    color: white;
+}
+
+h2 {
+    color: #00AB50;
+}
+
+.basico {
+    color: #06e66e;
+    background-color: #00803ce0;
+    
+}
+
+.intermediario {
+    color: #ab9a00;
+    background-color: #635902ec;
+}
+
+.avancado {
+    color: #ab0000;
+    background-color: #66020294;
+}
+
+.destaque {
+    background-color: #eed60085;
+}

@@ -1,0 +1,42 @@
+@charset "UTF-8 ";
+
+/* 
+anotar essas coisas da border e padding!
+
+*/
+
+
+    h1 { /*box level*/
+        
+        background-color: lightseagreen;
+
+        /*box size da minha caixa:*/
+        height: 300px;
+        width: 300px;
+
+        /* shorthand da border:
+        width/ style/ color/ */
+
+        border: 10px solid darkcyan;
+
+        
+        padding: 10px 10px 10px 10px;
+
+        /* se as quatros forem iguais, so precisa informar uma vez só, exemplo:
+        padding: 10px;*/
+
+       margin: 20px auto 40px auto;
+
+       /*  se quiser centralizar a parte da direita e da esquerda, é so mudar as propriedades para "auto"
+       
+       */
+
+        outline: 5px dashed salmon;
+        
+    }
+
+    a {  /*Inline level*/
+        
+        border: 1px solid red;
+        padding: 10px;
+    }
