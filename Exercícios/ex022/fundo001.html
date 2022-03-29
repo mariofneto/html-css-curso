@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de imagem de fundo</title>
+    <style>
+
+        body {
+
+            /* para fazer uma imagem de fundo na sua página é só fazer na body */ 
+
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+
+        div.quadrado {
+            display: inline-block; /* para uma ficar do lado da outra */
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+
+        }
+
+        div#q1 {
+
+            /* jeito de colocar cores chapadas */
+
+            background-color: lightcoral;
+        }
+        
+        div#q2 {
+
+            /* jeito de colocar cores em degradê com linear gradient*/
+
+            background-image: linear-gradient(to bottom, yellow, blueviolet);
+        }
+
+        div#q3 {
+
+            /* jeito de colocar imagens de fundo, usando URL */
+
+            background-image: url('imagens/pattern003.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+    
+</body>
+</html>
