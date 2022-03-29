@@ -4,23 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
-            height: 100vh;
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
+
+            /* height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /* contain faz com que a imagem seja 100% exibida, não resolve se vc quer preencher a tela. */
+            background-size: cover; */
+            
+            /* contain faz com que a imagem seja 100% exibida, não resolve se vc quer preencher a tela. */
             
             /* já o cover ele cobre a tela inteira mesmo se pra isso tem que dar uma picotadinha na imagem, não exibe 100% da imagem, mas ocupa 100% da viewport! */
+
+            background-attachment: fixed ;
+            /* scroll se rolar o vai rolar junto o conteúdo */
+            /* fixed vai fixar o fundo e rolar apenas o texto */
+
+            /* Shorthand - Background
+                color > image > position > repeat > [size] > attachment
+
+             a shothand do size nn esta funcionando no momento, ela some a imagem
+            */
+
+           
+            
         }
 
         main {
             background-color: white;
             
-            width: 400px; /* largura do white com texto */
+            max-width: 400px; /* largura do white com texto */
 
             padding: 10px; /* espacinho interno */
 
@@ -38,7 +58,39 @@
 <body>
     <main>
         <h1> Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi, ullam facere similique mollitia quas ab laudantium? Commodi incidunt adipisci ipsa dolore maiores eos nostrum rem enim itaque, voluptatibus eius?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsum aperiam, suscipit sequi tenetur quae sapiente excepturi laboriosam deleniti rem ullam, dicta corrupti totam illum maiores illo est sunt <perspiciatis class="lorem"></perspiciatis></p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laboriosam voluptate doloribus corporis quia, tenetur hic nemo possimus quas voluptatibus aut rerum officia sequi modi quos, aspernatur veniam pariatur exercitationem?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laboriosam voluptate doloribus corporis quia, tenetur hic nemo possimus quas voluptatibus aut rerum officia sequi modi quos, aspernatur veniam pariatur exercitationem?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laboriosam voluptate doloribus corporis quia, tenetur hic nemo possimus quas voluptatibus aut rerum officia sequi modi quos, aspernatur veniam pariatur exercitationem?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laboriosam voluptate doloribus corporis quia, tenetur hic nemo possimus quas voluptatibus aut rerum officia sequi modi quos, aspernatur veniam pariatur exercitationem?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laboriosam voluptate doloribus corporis quia, tenetur hic nemo possimus quas voluptatibus aut rerum officia sequi modi quos, aspernatur veniam pariatur exercitationem?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laboriosam voluptate doloribus corporis quia, tenetur hic nemo possimus quas voluptatibus aut rerum officia sequi modi quos, aspernatur veniam pariatur exercitationem?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laboriosam voluptate doloribus corporis quia, tenetur hic nemo possimus quas voluptatibus aut rerum officia sequi modi quos, aspernatur veniam pariatur exercitationem?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laboriosam voluptate doloribus corporis quia, tenetur hic nemo possimus quas voluptatibus aut rerum officia sequi modi quos, aspernatur veniam pariatur exercitationem?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laboriosam voluptate doloribus corporis quia, tenetur hic nemo possimus quas voluptatibus aut rerum officia sequi modi quos, aspernatur veniam pariatur exercitationem?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laboriosam voluptate doloribus corporis quia, tenetur hic nemo possimus quas voluptatibus aut rerum officia sequi modi quos, aspernatur veniam pariatur exercitationem?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laboriosam voluptate doloribus corporis quia, tenetur hic nemo possimus quas voluptatibus aut rerum officia sequi modi quos, aspernatur veniam pariatur exercitationem?
+        </p>
     </main>
 </body>
 </html>
