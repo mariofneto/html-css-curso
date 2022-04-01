@@ -13,11 +13,21 @@
         table {
             width: 500px;
             border-collapse: collapse; /* muito importante para deixar tudo grudado  */
+
+            position: relative; /* pra fixar o cabeçalho, precisa dessa configuração*/
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        thead > tr > th { /* para configurar o cabeçalho fixo tbm */
+
+            position: sticky;
+            top: -1px;
+            background-color: rgb(56, 58, 57);
+
         }
 
         thead, tfoot {
@@ -26,6 +36,7 @@
         }
 
         tbody tr:nth-child(2n) { 
+
             /* a pseudo classe :nth-child(2n), o valor que esta dentro do parênteses vai ser feito o efeito zebrado, exemplo 2n = a primeira nao vai ser e a segunda vai. */
 
             /* e nao vai afetar o cabeçalho pois so ta fazendo nas linhas dentro do tbody*/
