@@ -21,12 +21,30 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(56, 58, 57);
             color: white;
+        }
+
+        tbody tr:nth-child(2n) { 
+            /* a pseudo classe :nth-child(2n), o valor que esta dentro do parênteses vai ser feito o efeito zebrado, exemplo 2n = a primeira nao vai ser e a segunda vai. */
+
+            /* e nao vai afetar o cabeçalho pois so ta fazendo nas linhas dentro do tbody*/
+
+            /* tambem da pra mudar o que fica no parenteses, para "odd" que significa impar e para "even" que significa par.*/
+            background-color: lightseagreen;
         }
 
         td.num {
             text-align: right;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightseagreen;
+            
+
         }
     </style>
 </head>
@@ -36,6 +54,9 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION = LEGENDA DA TABELA
+            não pode nem TR nem TD
+
             THEAD
                   pode ter TR,TD,TH 
             TBODY
@@ -44,10 +65,12 @@
                   pode ter TR,TD,TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption> <!-- Legenda da tabela, antes do thead que ele é utilizado -->
+
         <thead>  <!-- Cabeça da tabela -->
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody> <!-- Corpo da tabela -->
@@ -163,7 +186,7 @@
         </tbody>
         <tfoot> <!-- Pé da tabela -->
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213.317.639</strong></td>
             </tr>
         </tfoot>
